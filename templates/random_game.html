@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSIP - Resultado do Sorteio</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="brand">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="WSIP Logo" class="logo">
+            <h1 class="sigla">WSIP - What Should I Play?</h1>
+        </div>
+        <h2 class="subtitulo">Resultado do Sorteio</h2>
+        <p class="wlcm_msg">Veja o jogo escolhido para você jogar agora.</p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card random-card w-100" style="max-width: 720px;">
+
+            {% if game and game[4] %}
+                <img
+                    src="{{ game[4] }}"
+                    alt="{{ game[1] }}"
+                    class="card-img-top random-cover"
+                >
+            {% endif %}
+
+            <div class="card-body random-info text-start">
+
+                {% if game %}
+
+                <h2 class="card-title">
+                    {{ game[1] }}
+                </h2>
+
+                <p class="card-text">
+                    <strong>🎮 Gênero:</strong> {{ game[2] }}
+                </p>
+
+                <p class="card-text">
+                    <strong>📌 Status:</strong> {{ game[3] }}
+                </p>
+
+                <p class="card-text">
+                    <strong>📅 Lançamento:</strong> {{ game[5] }}
+                </p>
+
+                <p class="card-text">
+                    <strong>⭐ Nota:</strong> {{ game[6] }}
+                </p>
+
+                <div class="random-message">
+                    <h3>Boa jogatina!</h3>
+                    <p>Aproveite sua escolha e lembre-se de fazer pausas para descansar os olhos.</p>
+
+                    {% if game[3] == "Não iniciado" %}
+                        <p>Ta na hora de começar algo novo! Mergulhe nessa aventura e descubra o que esse jogo tem a oferecer. Quem sabe você não encontra um novo favorito?</p>
+                    {% elif game[3] == "Jogando" %}
+                        <p>Hoje é o dia perfeito para retomar esse jogo e avançar na história. Quem sabe você não encontra aquele momento épico que estava esperando?</p>
+                    {% elif game[3] == "Zerado" %}
+                        <p>Nunca é tarde para jogar denovo, você pode buscar conquistas, descobrir segredos e encarar novos desafios!</p>
+                    {% elif game[3] == "Abandonado" %}
+                        <p>Não desiste desse tão cedo! Talvez seja a hora de dar uma segunda chance, você pode se surpreender...</p>
+                    {% endif %}
+                </div>
+
+                {% else %}
+
+                <h2 class="card-title">Sua biblioteca está vazia.</h2>
+                <p class="card-text">Adicione alguns jogos para começar a receber recomendações.</p>
+
+                {% endif %}
+
+                <div class="d-flex justify-content-center">
+                    <a href="/" class="back-btn mt-3">
+                        ← Voltar para Biblioteca
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

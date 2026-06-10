@@ -1,0 +1,380 @@
+/* ===== GERAL ===== */
+
+body {
+    background: #0f0b17;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== TOPO ===== */
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.logo {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+
+.sigla {
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #9d5cff;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow:
+        0 0 5px rgba(157,92,255,0.6),
+        0 0 10px rgba(157,92,255,0.35);
+}
+
+.subtitulo {
+    color: #c9c9c9;
+    margin-bottom: 10px;
+}
+
+.wlcm_msg {
+    color: #9d9d9d;
+    margin-bottom: 30px;
+}
+
+/* ===== BOTÃO PRINCIPAL ===== */
+
+.random-btn {
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        #8f44ff,
+        #b57cff
+    );
+
+    color: white;
+    text-decoration: none;
+
+    padding: 18px 40px;
+
+    border-radius: 18px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 15px rgba(157,92,255,0.6);
+}
+
+.random-btn:hover {
+    transform: scale(1.05);
+
+    color: white;
+
+    box-shadow:
+        0 0 25px rgba(157,92,255,0.9);
+}
+
+/* ===== FORMULÁRIO ===== */
+
+.add-card {
+    background: #191325;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.add-card h3 {
+    margin-bottom: 20px;
+}
+
+.add-card form {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.add-card input,
+.add-card select {
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    min-width: 220px;
+}
+
+.add-card button {
+    background: #8f44ff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+}
+
+.add-card button:hover {
+    background: #a96cff;
+}
+
+/* ===== BIBLIOTECA ===== */
+
+.biblioteca-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.library-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.stats-panel {
+    flex: 0 0 280px;
+    position: relative;
+    background: #191325;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
+    max-height: none;
+    overflow: visible;
+}
+
+.library-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 1024px) {
+    .library-layout {
+        display: block;
+    }
+
+    .stats-panel {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+.stats-panel h3 {
+    margin-bottom: 18px;
+    color: #f1f1ff;
+}
+
+.stat-card {
+    background: #25203b;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-card:last-child {
+    margin-bottom: 0;
+}
+
+.stat-value {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #9d5cff;
+}
+
+.stat-label {
+    color: #c9c9c9;
+    font-size: 0.95rem;
+}
+
+/* ===== CARD ===== */
+
+.game-card {
+    background: #191325;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(157,92,255,0.5);
+}
+
+/* ===== CAPA ===== */
+
+.capa {
+    width: 100%;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ===== INFORMAÇÕES ===== */
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h3 {
+    color: #b57cff;
+
+    margin-bottom: 15px;
+}
+
+.game-info p {
+    margin: 8px 0;
+}
+
+/* ===== STATUS ===== */
+
+.game-info select {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2d2240;
+
+    color: white;
+}
+
+/* ===== BOTÃO EXCLUIR ===== */
+
+.delete-btn {
+    width: 100%;
+
+    margin-top: 12px;
+
+    background: #d63c3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #ff5555;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+
+    .sigla {
+        font-size: 3rem;
+    }
+
+    .capa {
+        height: 300px;
+    }
+
+}
+
+.random-card {
+    background: #25203b !important;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 0 24px rgba(157,92,255,0.35);
+}
+
+.random-cover {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+}
+
+.random-info {
+    padding: 28px;
+    color: #f1f1ff;
+}
+
+.random-info h2,
+.random-info p,
+.random-info strong {
+    color: #f1f1ff;
+}
+
+.random-message {
+    margin-top: 20px;
+    background: rgba(61, 50, 89, 0.9);
+    border-radius: 15px;
+    padding: 18px;
+    color: #e5e5ff;
+}
+
+.random-message h3 {
+    color: #d3c4ff;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #8f44ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 12px 26px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #a96cff;
+    transform: scale(1.03);
+}

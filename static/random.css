@@ -1,0 +1,117 @@
+/* ================================= */
+/* PÁGINA DE SORTEIO */
+/* ================================= */
+
+.random-container {
+
+    max-width: 700px;
+
+    margin: 50px auto;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.random-title {
+
+    color: #9d5cff;
+
+    font-size: 3rem;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 0 10px #9d5cff;
+}
+
+/* CARD */
+
+.random-card {
+
+    background: #191325;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(157,92,255,0.25);
+}
+
+/* CAPA */
+
+.random-cover {
+
+    width: 100%;
+
+    max-height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* INFO */
+
+.random-info {
+
+    padding: 25px;
+}
+
+.random-info h2 {
+
+    color: #b57cff;
+
+    margin-bottom: 20px;
+}
+
+.random-info p {
+
+    margin: 10px 0;
+}
+
+/* MENSAGEM */
+
+.random-message {
+
+    margin-top: 20px;
+
+    background: #2d2240;
+
+    border-radius: 15px;
+
+    padding: 15px;
+}
+
+/* BOTÃO */
+
+.back-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    background: #8f44ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+
+    background: #a96cff;
+
+    color: white;
+
+    transform: scale(1.05);
+}
