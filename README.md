@@ -7,7 +7,7 @@ WSIP (What Should I Play?) é uma aplicação web desenvolvida em Python utiliza
 
 O objetivo do sistema é ajudar jogadores que possuem muitos jogos em sua biblioteca e têm dificuldade em decidir qual jogar. O usuário pode cadastrar seus jogos, organizar o progresso de cada um e utilizar um sistema de sorteio para receber uma recomendação aleatória.
 
-Além disso, o sistema realiza o consumo de uma API externa para buscar automaticamente informações dos jogos cadastrados, como capa, gênero, data de lançamento e avaliação.
+Além disso, o sistema realiza o consumo de uma API externa (RAWG) para buscar automaticamente informações dos jogos cadastrados, como capa, gênero, data de lançamento e avaliação.
 
 ---
 
@@ -83,7 +83,7 @@ WSIP/
 
 Clone o repositório:
 
-git clone LINK_DO_REPOSITORIO
+git clone (https://github.com/srbruno29/WSIP)
 
 Acesse a pasta do projeto:
 
@@ -148,6 +148,6 @@ O projeto atende aos requisitos propostos na atividade:
 
 ## Autor
 
-Bruno da Silva Martins
+Bruno da Silva Martins, Felipe da Silva Paz
 
 Projeto desenvolvido para a disciplina de Desenvolvimento Web.
