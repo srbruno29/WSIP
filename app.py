@@ -105,7 +105,6 @@ def random_game():
             "random_game.html", game=None
         )
 
-    # Jogos com status "Zerado" terão probabilidade menor
     zero_weight = 0.5
     weights = []
     for g in games:

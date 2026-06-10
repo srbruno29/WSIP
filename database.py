@@ -2,8 +2,6 @@ import sqlite3
 
 conn = sqlite3.connect("games.db")
 cursor = conn.cursor()
-
-# Schema sem coluna de plataforma
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS games (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

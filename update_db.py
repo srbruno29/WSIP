@@ -1,6 +1,4 @@
 import sqlite3
-
-# Script de migração: remove coluna de plataforma se existir, e garante o esquema sem plataforma
 conn = sqlite3.connect("games.db")
 cursor = conn.cursor()
 
@@ -23,12 +21,12 @@ desired = [
 if "platform" in cols or "platforma" in cols:
     print("Detectada coluna de plataforma — recriando tabela sem ela...")
 
-    # Criar tabela temporária
+    
     cursor.execute("DROP TABLE IF EXISTS games_new")
     cols_sql = ",\n    ".join([f"{name} {typ}" for name, typ in desired])
     cursor.execute(f"CREATE TABLE games_new ({cols_sql})")
 
-    # Montar seleção mapeando colunas antigas para novas (aceita nomes em pt/eng)
+    
     def pick(old_names):
         for n in old_names:
             if n in cols:

@@ -1,5 +1,3 @@
-/* ===== GERAL ===== */
-
 body {
     background: #0f0b17;
     color: white;
@@ -13,8 +11,6 @@ body {
     margin: auto;
     padding: 20px;
 }
-
-/* ===== TOPO ===== */
 
 .hero {
     text-align: center;
@@ -58,8 +54,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* ===== BOTÃO PRINCIPAL ===== */
-
 .random-btn {
     display: inline-block;
 
@@ -93,8 +87,6 @@ body {
     box-shadow:
         0 0 25px rgba(157,92,255,0.9);
 }
-
-/* ===== FORMULÁRIO ===== */
 
 .add-card {
     background: #191325;
@@ -150,8 +142,6 @@ body {
 .add-card button:hover {
     background: #a96cff;
 }
-
-/* ===== BIBLIOTECA ===== */
 
 .biblioteca-title {
     text-align: center;
@@ -224,8 +214,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* ===== CARD ===== */
-
 .game-card {
     background: #191325;
     border-radius: 20px;
@@ -239,8 +227,6 @@ body {
     box-shadow: 0 0 20px rgba(157,92,255,0.5);
 }
 
-/* ===== CAPA ===== */
-
 .capa {
     width: 100%;
 
@@ -250,8 +236,6 @@ body {
 
     display: block;
 }
-
-/* ===== INFORMAÇÕES ===== */
 
 .game-info {
     padding: 20px;
@@ -266,8 +250,6 @@ body {
 .game-info p {
     margin: 8px 0;
 }
-
-/* ===== STATUS ===== */
 
 .game-info select {
     width: 100%;
@@ -284,8 +266,6 @@ body {
 
     color: white;
 }
-
-/* ===== BOTÃO EXCLUIR ===== */
 
 .delete-btn {
     width: 100%;
@@ -310,8 +290,6 @@ body {
 .delete-btn:hover {
     background: #ff5555;
 }
-
-/* ===== RESPONSIVO ===== */
 
 @media (max-width: 768px) {
 
