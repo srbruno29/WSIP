@@ -64,19 +64,16 @@
     </h3>
 
     {% set total_games = games|length %}
-    {% set nao_iniciado = 0 %}
-    {% set jogando = 0 %}
-    {% set zerados = 0 %}
-    {% set abandonados = 0 %}
+    {% set stats = namespace(nao_iniciado=0, jogando=0, zerados=0, abandonados=0) %}
     {% for game in games %}
-        {% if game[3] == 'Não iniciado' %}
-            {% set nao_iniciado = nao_iniciado + 1 %}
-        {% elif game[3] == 'Jogando' %}
-            {% set jogando = jogando + 1 %}
-        {% elif game[3] == 'Zerado' %}
-            {% set zerados = zerados + 1 %}
-        {% elif game[3] == 'Abandonado' %}
-            {% set abandonados = abandonados + 1 %}
+        {% if (game[3] or "")|trim|lower == 'não iniciado' %}
+            {% set stats.nao_iniciado = stats.nao_iniciado + 1 %}
+        {% elif (game[3] or "")|trim|lower == 'jogando' %}
+            {% set stats.jogando = stats.jogando + 1 %}
+        {% elif (game[3] or "")|trim|lower == 'zerado' %}
+            {% set stats.zerados = stats.zerados + 1 %}
+        {% elif (game[3] or "")|trim|lower == 'abandonado' %}
+            {% set stats.abandonados = stats.abandonados + 1 %}
         {% endif %}
     {% endfor %}
 
@@ -88,19 +85,19 @@
                 <span class="stat-label">Jogos cadastrados</span>
             </div>
             <div class="stat-card">
-                <span class="stat-value">{{ nao_iniciado }}</span>
+                <span class="stat-value">{{ stats.nao_iniciado }}</span>
                 <span class="stat-label">Não iniciado</span>
             </div>
             <div class="stat-card">
-                <span class="stat-value">{{ jogando }}</span>
+                <span class="stat-value">{{ stats.jogando }}</span>
                 <span class="stat-label">Jogando</span>
             </div>
             <div class="stat-card">
-                <span class="stat-value">{{ zerados }}</span>
+                <span class="stat-value">{{ stats.zerados }}</span>
                 <span class="stat-label">Zerados</span>
             </div>
             <div class="stat-card">
-                <span class="stat-value">{{ abandonados }}</span>
+                <span class="stat-value">{{ stats.abandonados }}</span>
                 <span class="stat-label">Abandonado</span>
             </div>
         </aside>
