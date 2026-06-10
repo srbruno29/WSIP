@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório - Frameworks e Projeto WSIP</title>
+    <link rel="stylesheet" href="relatorio.css">
+</head>
+
+<body>
+
+```
+<div class="capa">
+
+    <h1>Relatório sobre Frameworks e Desenvolvimento Web</h1>
+
+    <h2>Projeto WSIP - What Should I Play?</h2>
+
+    <p><strong>Aluno:</strong> Bruno da Silva Martins, Felipe da Silva Paz</p>
+
+</div>
+
+<div class="secao">
+
+    <h2>1. O que são Frameworks e para que são utilizados?</h2>
+
+    <p>
+        Frameworks são conjuntos de ferramentas, bibliotecas e estruturas pré-definidas que auxiliam no
+        desenvolvimento de aplicações de software. Eles fornecem uma base organizada para que os desenvolvedores
+        possam criar sistemas de forma mais rápida, segura e padronizada, evitando a necessidade de implementar
+        funções comuns do zero.
+    </p>
+
+    <p>
+        No desenvolvimento web, os frameworks são amplamente utilizados para organizar o código, facilitar a
+        comunicação com bancos de dados, gerenciar rotas, implementar mecanismos de segurança e agilizar a criação
+        de interfaces e funcionalidades. Dessa forma, aumentam a produtividade e tornam a manutenção do sistema mais
+        prática.
+    </p>
+
+</div>
+
+<div class="secao">
+
+    <h2>2. Frameworks para Programação Web (Back-end)</h2>
+
+    <table>
+
+        <tr>
+            <th>Linguagem</th>
+            <th>Framework</th>
+            <th>Propósito</th>
+            <th>Diferencial</th>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>FastAPI</td>
+            <td>Desenvolvimento de APIs modernas e de alta performance.</td>
+            <td>Documentação automática e excelente desempenho.</td>
+        </tr>
+
+        <tr>
+            <td>Java</td>
+            <td>Javalin</td>
+            <td>Criação simplificada de aplicações web e APIs.</td>
+            <td>Facilidade de aprendizado e configuração mínima.</td>
+        </tr>
+
+        <tr>
+            <td>PHP</td>
+            <td>CodeIgniter</td>
+            <td>Desenvolvimento rápido de aplicações web.</td>
+            <td>Leveza e baixo consumo de recursos.</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>Fastify</td>
+            <td>Criação de APIs e aplicações backend em Node.js.</td>
+            <td>Alto desempenho em requisições simultâneas.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="secao">
+
+    <h2>3. Framework Utilizado no Projeto</h2>
+
+    <p>
+        Para o desenvolvimento da aplicação foi utilizado o framework <strong>Flask</strong>, escrito em Python.
+    </p>
+
+    <p>
+        O Flask é um microframework voltado para aplicações web. Sua principal característica é a simplicidade,
+        permitindo que o desenvolvedor tenha maior controle sobre a estrutura do sistema.
+    </p>
+
+    <p>
+        A escolha do Flask ocorreu devido à sua facilidade de uso, boa documentação e integração simples com banco
+        de dados SQLite e APIs externas e principalmente pela recomendação do professor de programação Henrique Sant'Anna.
+    </p>
+
+</div>
+
+<div class="secao">
+
+    <h2>4. Descrição do Projeto Desenvolvido</h2>
+
+    <h3>Nome do Projeto</h3>
+
+    <p>
+        WSIP - What Should I Play?
+    </p>
+
+    <h3>Objetivo</h3>
+
+    <p>
+        O objetivo do projeto é auxiliar jogadores que possuem muitos jogos em suas bibliotecas e encontram
+        dificuldade para decidir qual deles jogar.
+    </p>
+
+    <p>
+        O sistema permite cadastrar jogos, armazenar informações automaticamente, acompanhar o progresso de cada
+        título e realizar sorteios aleatórios para recomendar uma próxima experiência ao usuário.
+    </p>
+
+</div>
+
+<div class="secao">
+
+    <h2>5. Funcionalidades Implementadas</h2>
+
+    <ul>
+
+        <li>Cadastro de jogos.</li>
+
+        <li>Exibição da biblioteca de jogos.</li>
+
+        <li>Atualização de status dos jogos.</li>
+
+        <li>Exclusão de registros.</li>
+
+        <li>Consulta automática de informações através de API.</li>
+
+        <li>Exibição automática de capas dos jogos.</li>
+
+        <li>Sorteio aleatório de um jogo da biblioteca.</li>
+
+        <li>Persistência dos dados utilizando banco SQLite.</li>
+
+        <li>Interface web desenvolvida em HTML e CSS.</li>
+
+    </ul>
+
+</div>
+
+<div class="secao">
+
+    <h2>6. Tecnologias Utilizadas</h2>
+
+    <table>
+
+        <tr>
+            <th>Tecnologia</th>
+            <th>Finalidade</th>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>Linguagem principal do sistema.</td>
+        </tr>
+
+        <tr>
+            <td>Flask</td>
+            <td>Framework backend.</td>
+        </tr>
+
+        <tr>
+            <td>SQLite</td>
+            <td>Persistência de dados.</td>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>Estrutura das páginas.</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>Estilização da interface.</td>
+        </tr>
+
+        <tr>
+            <td>RAWG API</td>
+            <td>Obtenção automática de informações dos jogos.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="secao">
+
+    <h2>7. Requisitos da Atividade Atendidos</h2>
+
+    <ul>
+
+        <li>Utilização de Framework Web (Flask).</li>
+
+        <li>CRUD completo (Create, Read, Update e Delete).</li>
+
+        <li>Consumo de API realizado no backend.</li>
+
+        <li>Processamento de dados através do sorteio de jogos.</li>
+
+        <li>Persistência utilizando banco de dados SQLite.</li>
+
+        <li>Renderização de páginas HTML por meio de templates.</li>
+
+        <li>Versionamento utilizando Git e GitHub.</li>
+
+    </ul>
+
+</div>
+
+<div class="secao">
+
+    <h2>8. Repositório do Projeto</h2>
+
+    <p>
+        O código-fonte completo do projeto está disponível publicamente no GitHub:
+    </p>
+
+    <p>
+        <a href="https://github.com/srbruno29/WSIP" target="_blank">
+            https://github.com/srbruno29/WSIP
+        </a>
+    </p>
+
+</div>
+
+<div class="secao">
+
+    <h2>9. Conclusão</h2>
+
+    <p>
+        O desenvolvimento deste trabalho permitiu aplicar conceitos importantes relacionados ao uso de frameworks,
+        desenvolvimento web, integração com APIs externas e persistência de dados.
+    </p>
+
+    <p>
+        Durante a implementação do sistema foi possível compreender melhor o funcionamento do framework Flask,
+        aprender a estruturar aplicações web e utilizar ferramentas de versionamento como Git e GitHub.
+    </p>
+
+    <p>
+        O resultado final foi uma aplicação funcional e prática, capaz de auxiliar usuários na organização de suas
+        bibliotecas de jogos e na escolha de novas experiências para jogar, atendendo aos requisitos propostos pela
+        atividade.
+    </p>
+
+</div>
+
+</body>
+
+</html>
